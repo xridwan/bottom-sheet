@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Mobapedia</string>
+    <string name="label_release">Release date : %s</string>
+    <string name="label_games">Games</string>
+    <string name="label_description">Description</string>
+    <string name="label_version">v.1.0.1</string>
+    <string name="label_email">v.1.0.1</string>
+    <string name="label_name">Sheet App</string>
+
+    <string-array name="games">
+        <item>Heroes of Order and Chaos</item>
+        <item>Dota 2</item>
+        <item>Smite</item>
+        <item>Vainglory </item>
+        <item>Arena of Valor</item>
+        <item>Battlerite</item>
+        <item>Heroes Evolved</item>
+        <item>Paladins</item>
+        <item>Marvel Super War</item>
+        <item>League of Legends: Wild Rift</item>
+        <item>Apex Legends</item>
+    </string-array>
+
+    <string-array name="release">
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2014</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>Terinspirasi dari World of Warcraft, developer Gameloft pertama kali merilis Order and Chaos di tahun 2011. Setahun kemudian, mereka ngerilis Heroes of Order and Chaos dengan genre MOBA. Setting dunianya sama, cuma beda di gameplay aja. Kalau di Order and Chaos lo dituntut untuk bikin grup atau ngegeng, di Heroes of Order and Chaos fokusnya lebih ke strategi. Battle mode yang tersedia cukup umum, 5 vs 5, atau 3 vs 3. Game ini hanya bisa diakses untuk iOS dan Android, karena Gameloft udah menutup versi Windows bulan Februari lalu.</item>
+        <item>Bukan pemain baru di kategori MOBA, Dota 2 bisa dibilang punya perkembangan paling menarik sejak dirilis sampai sekarang. Hal ini nggak lepas dari komunitas pemainnya yang cukup solid. Bayangin aja, ketika game ini masih jadi mods di Warcraft III, lo bisa banget ngasih ide ke developer untuk dipertimbangkan sebagai update berikutnya. Saking banyaknya perubahan dan perkembangan di dalam game ini, ada juga yang menyebut kalau MOBA ini pertama kali dicetuskan untuk menyebut genre Dota 2. Sebelum dirilis resmi di Steam, Dota 2 udah punya turnamen e-sports duluan sob, Namanya The International. Hadiahnya? 1 juta USD!</item>
+        <item>Dari developer Hi-Rez Studios, Smite punya karakter hero dengan background para dewa dan dewi. Kalau lo doyan banget ama mitologi Yunani, Axe yakin lo bakal kegirangan tiap main game ini. Nggak cuma dewa-dewi aja, Smite juga nambahin hero dari kisah King Arthur. Makin mantul nggak tuh? Secara gameplay, Smite cukup mirip dengan game lainnya. Kalau mau tempur, lo tinggal pilih mode Conquest. Sebelum mulai, lo punya waktu untuk pilih senjata dan nge-upgrade. Miriplah sama game FPS Counter Strike. Game ini bisa lo mainin di berbagai platform, seperti PlayStation 4, Xbox One, macOS, Windows, dan juga Nintendo Switch.</item>
+        <item>Kalau lo udah lama berkutat di dunia MOBA gaming, lo pasti tau lah dengan kata-kata usil, “MOBA kok analog?” Inilah game senior yang menjadi sumbernya. Bisa dibilang Vainglory merupakan pelopor game MOBA di mobile phone. Beberapa tahun lalu pun, Vainglory mencoba membuat game ini menjadi cross platform dengan menciptakan versi PC. Peningkatan ini membuat Vainglory berhadapan langsung dengan raksasa MOBA PC, yaitu Dota 2 dan League of Legends. Membahas game ini, AXE menilai grafis dan gameplay yang ditawarkan cukup oke. Pertarungan yang dengan format 3 vs 3 juga cukup seru dan lebih mengandalkan kemampuan individu player itu. Meski punya gameplay yang oke, sayangnya player Vainglory lagi ketar-ketir nih. Banyak isu yang beredar kencang kalau game ini akan segera ditinggalkan oleh Super Evil Megacorp (SEMC), sang developer.</item>
+        <item>Banyak yang bilang kalau game ini sebelas-dua belas sama Mobile Legends: Bang Bang. Padahal, nggak juga sih. Kemiripan memang ada, tapi perbedaan juga ada banyak. Ini juga yang bikin player saling sikut-sikutan. Nih, AXE bongkar satu per satu.Untuk urusan gameplay, keduanya hampir mirip. Mode utamanya adalah 5 vs 5 dan lo juga bisa pilih mode 1 vs 1. Jalurnya? Sama juga; atas, tengah, dan bawah. Di tiap jalur ini, juga ada monster yang bisa lo kalahkan untuk buff. Lalu, ada juga sistem Talents dan Battle Spell, lalu kontrol analog yang nggak jauh beda. Jadi, bedanya di mana? Salah satunya adalah kemudahan mendapatkan hero atau skin. Kalau di Mobile Legends, lo kudu beli pakai diamonds (dari Rupiah asli tentu saja) dengan harga yang lumayan. Nah, di AOV, banyak skin bisa didapat dengan gratis. Ini bisa karena skin di Mobile Legends juga berguna untuk meningkatkan stats. Salah satu yang sering dijadikan bahan war antar player adalah grafis. Dari segi visual, AoV punya grafis yang lebih baik dan lebih tajam. Mobile Legends sering disebut memiliki grafis yang terbilang S-T-D. Kalau lo sendiri gimana? Udah pernah coba main AoV?</item>
+        <item>Tahun 2016 dan tahun 2017 emang tahunnya game MOBA. Banyak banget developer yang ngerilis game dengan genre ini. Hebatnya, masing-masing game punya kualitas yang oke dan menjadi salah satu game MOBA yang sampai saat ini masih dimainin. Developer game ini menyebut Battlerite sebagai Team Arena Brawler alias arena tawuran antar tim. Pada kenyataannya, emang bener juga sih. Fokus game ini adalah action, action, dan action. Konsep pertarungannya bukan ngancurin tower musuh atau nge-farming untuk nambah level. Karena itulah, satu match di Battlerite nggak pakai lama. Intinya, lo ngadu skill. Kalau jago, ya lo bakal cepat menang. Tertarik coba nggak?</item>
+        <item>Nggak mau ketinggalan, publisher R2Games menggandeng developer NetDragon Websoft untuk mengembangkan game mobile dengan genre MOBA. Jadilah Heroes Evolved dirilis dengan konsep yang mengusung balance alias keseimbangan antara action dan strategi. Game ini juga menggunakan mode 5 vs 5 atau 3 vs 3 atau 1 vs 1 dengan kualitas grafis yang cukup oke. Lalu, apa yang ngebedain Heroes Evolved dari game lainnya? Itu tadi, keseimbangan. Tiap hero dirancang punya kemampuan dan skill yang seimbang. Jadi, meski newbie, lo nggak akan keliatan culun banget deh. Belum lagi beberapa fitur yang diadaptasi dari game PC, seperti Fog of War. Kalau lo emang rajin ngecek map, fitur ini akan jadi tantangan. Peta lo bakal ketutupan kabut. Lo cuma bisa ngeliat temen satu tim lo atau teman lo pas lagi war sama musuh. Hayo loh! Kalau fitur ini bikin lo kesel, nggak usah khawatir. Ada fitur penangkalnya, yaitu Observer Wands. Ada tapinya nih bro, fitur ini punya cooldown time yang lama gila. Jadi, lo emang harus pintar ngatur timing. Selain itu, ada fitur a la DotA2, yaitu skill aktif. Lo tinggal pilih item khusus yang punya skill tertentu, misalnya healing. Beberapa fitur ajib ini nih yang bikin Heroes Evolved menjadi game MOBA yang layak diinstall.</item>
+        <item>Sekilas, game ini punya genre FPS (first person shooter), padahal mah MOBA. Dari developer Evil Mojo, game ini bisa dimainkan di platform PlayStation 4, Nintendo Switch, Xbox One, Microsoft Windows, Macintosh Operating System. Meski tembak-tembakan, konsep MOBA tetap kental di sini bro. Contohnya aja mode Siege yang mirip seperti pertarungan klasik di game MOBA pada umumnya. Ada juga mode Onslaught yang menentukan pemenangnya dari score tinggi hasil dari menangkap lawan. Yang terakhir, ada pula mode Team Deatchmatch yang bisa dibilang adalah tawuran massal. Hehe.</item>
+        <item>Di awal rilisnya, game ini menawarkan 44 karakter, superhero ataupun supervillain. Kalau lo cuma tau karakter Marvel dari filmnya, ada kemungkinan lo nggak familier dengan beberapa karakter lain yang hanya ada di komik. Mirip dengan game MOBA lainnya, hero di Marvel Super War punya role Fighter, Power, Marksman, Assassin, Tank, dan Support. Ada juga hero yang punya dua role sekaligus. Karena masih baru, mode yang dikasih Marvel Super War masih belum terlalu banyak. Ada MOBA klasik 5 vs 5, Battle for Vibranium yang berupa Arcade, dan juga Free for All yang menggunakan satu jalur. Mengadaptasi film, Marvel Super War bikin fitur custom yang unik, karena menggunakan sistem Power Core. Sistem ini adalah hasil adaptasi Infinity Stones. Intinya, lo yang menentukan sendiri hasil build-nya. Kalau mau lebih asik lagi mainin game ini, mungkin lo harus nunggu beberapa waktu untuk dapat update.</item>
+        <item>Ini nih ‘anak’ dari game MOBA yang jadi saingan Dota 2, hehe… Karena demand untuk mobile game yang tinggi, developer Riot Games akhirnya bikin League of Legends (LoL) versi mobile. Rencana ini sebenarnya sudah ada dari tahun 2015 ketika LoL lagi jaya-jayanya. Tapi, baru tahun ini, rencana ini terealisasi. Gameplay-nya disebut-sebut akan mirip seperti versi PC. Belum banyak yang bisa diceritakan dari versi mobile ini, tapi AXE pun nggak sabar untuk nyobain langsung. League of Legends: Wild Rift direncanakan rilis tahun ini dengan tanggal yang belum pasti. Kabarnya, game ini akan dirilis terbatas di Brasil dan Filipina bulan Juni lalu.</item>
+        <item>Game multiplayer online lainnya yang bisa lo coba adalah Apex Legends. Lo wajib coba kalau suka sama genre battle royale. Setelah sukses di PC dan konsol lainnya, EA memutuskan untuk mengeluarkan versi MOBA-nya. Setiap karakter memiliki kemampuan uniknya masing-masing. Setiap tim berisi 3 orang, dan lo akan punya sekitar 59 tim lawan (total 60 orang pemain dalam satu game). Pace-nya cukup cepat dan cocok buat dimainkan dimana aja dan kapan aja!</item>
+    </string-array>
+
+    <string-array name="avatar">
+        <item>@drawable/game1</item>
+        <item>@drawable/game2</item>
+        <item>@drawable/game3</item>
+        <item>@drawable/game4</item>
+        <item>@drawable/game5</item>
+        <item>@drawable/game6</item>
+        <item>@drawable/game7</item>
+        <item>@drawable/game8</item>
+        <item>@drawable/game9</item>
+        <item>@drawable/game10</item>
+        <item>@drawable/game11</item>
+    </string-array>
+
+    <string-array name="icon">
+        <item>@drawable/ic_games</item>
+        <item>@drawable/ic_movie</item>
+        <item>@drawable/ic_category</item>
+        <item>@drawable/ic_download</item>
+        <item>@drawable/ic_topup</item>
+        <item>@drawable/ic_history</item>
+        <item>@drawable/ic_find</item>
+        <item>@drawable/ic_info</item>
+    </string-array>
+
+    <string-array name="feature">
+        <item>Games</item>
+        <item>Trailer</item>
+        <item>Category</item>
+        <item>Download </item>
+        <item>TopUp</item>
+        <item>History</item>
+        <item>Find Games</item>
+        <item>About</item>
+    </string-array>
+</resources>
