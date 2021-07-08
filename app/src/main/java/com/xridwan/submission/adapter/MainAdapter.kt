@@ -11,7 +11,7 @@ import com.xridwan.submission.R
 import com.xridwan.submission.databinding.GameItemLayoutBinding
 import com.xridwan.submission.model.Game
 
-class MainAdapter(private val game: ArrayList<Game>) :
+class MainAdapter(private val gameList: ArrayList<Game>) :
     RecyclerView.Adapter<MainAdapter.MainViewHolder>() {
 
     private lateinit var onItemCLickCallBack: OnItemCLickCallBack
@@ -30,25 +30,25 @@ class MainAdapter(private val game: ArrayList<Game>) :
         val animation =
             AnimationUtils.loadAnimation(holder.itemView.context, android.R.anim.slide_in_left)
 
-        holder.bind(game[position])
+        holder.bind(gameList[position])
         holder.itemView.animation = animation
     }
 
-    override fun getItemCount(): Int = game.size
+    override fun getItemCount(): Int = gameList.size
 
     inner class MainViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val binding = GameItemLayoutBinding.bind(itemView)
 
-        fun bind(game: Game) {
+        fun bind(games: Game) {
             Glide.with(itemView.context)
-                .load(game.poster)
+                .load(games.poster)
                 .apply(RequestOptions())
                 .into(binding.imgPoster)
 
-            binding.tvGames.text = game.games
+            binding.tvGames.text = games.games
 
             itemView.setOnClickListener {
-                onItemCLickCallBack.onItemClicked(game)
+                onItemCLickCallBack.onItemClicked(games)
             }
         }
     }

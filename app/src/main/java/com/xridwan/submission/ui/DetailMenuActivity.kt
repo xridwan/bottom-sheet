@@ -6,7 +6,6 @@ import com.xridwan.submission.databinding.ActivityDetailMenuBinding
 import com.xridwan.submission.model.Sheet
 
 class DetailMenuActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityDetailMenuBinding
 
     companion object {

@@ -11,6 +11,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.xridwan.submission.R
 import com.xridwan.submission.adapter.MainAdapter
 import com.xridwan.submission.adapter.SheetAdapter
+import com.xridwan.submission.adapter.SheetListAdapter
 import com.xridwan.submission.databinding.ActivityMainBinding
 import com.xridwan.submission.model.Game
 import com.xridwan.submission.model.Sheet
@@ -19,21 +20,28 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var mainAdapter: MainAdapter
     private lateinit var sheetAdapter: SheetAdapter
+    private lateinit var sheetListAdapter: SheetListAdapter
+
     private var list = ArrayList<Game>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        recyclerView()
-        bottomSheet()
-    }
-
-    private fun bottomSheet() {
+        supportActionBar?.elevation = 0.0f
         BottomSheetBehavior.from(binding.layoutBottom).apply {
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
 
+        recyclerView()
+        bottomSheet()
+
+        binding.swLayout.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) bottomSheetList() else bottomSheet()
+        }
+    }
+
+    private fun bottomSheet() {
         val list = arrayListOf<Sheet>()
         list.addAll(getListMenu())
 
@@ -47,6 +55,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         sheetAdapter.setOnItemClick(object : SheetAdapter.OnItemCLickCallBack {
+            override fun onItemClicked(data: Sheet) {
+                startActivity(
+                    Intent(
+                        this@MainActivity,
+                        DetailMenuActivity::class.java
+                    ).putExtra(DetailMenuActivity.EXTRA_DATA, data)
+                )
+            }
+        })
+    }
+
+    private fun bottomSheetList() {
+        val list = arrayListOf<Sheet>()
+        list.addAll(getListMenu())
+
+        sheetListAdapter = SheetListAdapter(list)
+        sheetListAdapter.notifyDataSetChanged()
+
+        binding.apply {
+            rvMenu.layoutManager = LinearLayoutManager(this@MainActivity)
+            rvMenu.setHasFixedSize(true)
+            rvMenu.adapter = sheetListAdapter
+        }
+
+        sheetListAdapter.setOnItemClick(object : SheetListAdapter.OnItemCLickCallBack {
             override fun onItemClicked(data: Sheet) {
                 startActivity(
                     Intent(
@@ -83,32 +116,32 @@ class MainActivity : AppCompatActivity() {
         val dataRelease = resources.getStringArray(R.array.release)
         val dataDesc = resources.getStringArray(R.array.description)
 
-        val listGame = ArrayList<Game>()
+        val gameList = ArrayList<Game>()
         for (position in dataGame.indices) {
-            val mainModel = Game(
+            val games = Game(
                 dataPhoto.getResourceId(position, -1),
                 dataGame[position],
                 dataRelease[position],
                 dataDesc[position],
             )
-            listGame.add(mainModel)
+            gameList.add(games)
         }
-        return listGame
+        return gameList
     }
 
     private fun getListMenu(): ArrayList<Sheet> {
         val dataPhoto = resources.obtainTypedArray(R.array.icon)
         val dataFeature = resources.getStringArray(R.array.feature)
 
-        val listMenu = ArrayList<Sheet>()
+        val sheetList = ArrayList<Sheet>()
         for (position in dataFeature.indices) {
-            val mainModel = Sheet(
+            val sheets = Sheet(
                 dataPhoto.getResourceId(position, -1),
                 dataFeature[position],
             )
-            listMenu.add(mainModel)
+            sheetList.add(sheets)
         }
-        return listMenu
+        return sheetList
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
