@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sheetAdapter: SheetAdapter
     private lateinit var sheetListAdapter: SheetListAdapter
 
-    private var list = ArrayList<Game>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -92,6 +90,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun recyclerView() {
+        val list = arrayListOf<Game>()
         list.addAll(getListGame())
 
         mainAdapter = MainAdapter(list)
